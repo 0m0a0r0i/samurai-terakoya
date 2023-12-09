@@ -1,0 +1,16 @@
+class Human:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def check_adult(self):
+    if (self.age) < 20:
+      print(f"{self.name}：子供")
+    else:
+      print(f"{self.name}：大人")
+
+data = {"太郎": 20, "次郎": 19, "三郎": 18}
+
+for key, value in data.items():
+  human = Human(key, value)
+  human.check_adult()
